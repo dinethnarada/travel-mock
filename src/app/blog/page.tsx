@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const blogPosts = [
   {
@@ -70,9 +71,12 @@ export default function BlogPage() {
         <div className="mb-12">
           <div className="relative h-[400px] rounded-xl overflow-hidden">
             <div className="absolute inset-0 bg-black/50 z-10" />
-            <div className="absolute inset-0 bg-gray-200 flex items-center justify-center text-gray-500">
-              Featured Blog Image Placeholder
-            </div>
+            <Image
+                                          src={'/images/blog/featured.jpg'}
+                                          alt={"featured"}
+                                          fill
+                                          className="object-cover"
+                                        />
             <div className="absolute bottom-0 left-0 right-0 p-8 z-20 text-white">
               <div className="max-w-3xl">
                 <div className="mb-4">
@@ -98,9 +102,12 @@ export default function BlogPage() {
           {blogPosts.map((post) => (
             <article key={post.id} className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="relative h-48">
-                <div className="absolute inset-0 bg-gray-200 flex items-center justify-center text-gray-500">
-                  Blog Image Placeholder
-                </div>
+              <Image
+                                          src={post.image}
+                                          alt={post.title}
+                                          fill
+                                          className="object-cover"
+                                        />
               </div>
               <div className="p-6">
                 <div className="flex items-center gap-4 mb-4">
@@ -147,9 +154,13 @@ export default function BlogPage() {
               {blogPosts.slice(0, 3).map((post) => (
                 <div key={post.id} className="flex gap-4">
                   <div className="relative w-24 h-24 flex-shrink-0">
-                    <div className="absolute inset-0 bg-gray-200 rounded flex items-center justify-center text-gray-500 text-xs">
-                      Image
-                    </div>
+                        <Image
+                                          src={post.image}
+                                          alt={post.title}
+                                          fill
+                                          className="object-cover"
+                                        />
+                   
                   </div>
                   <div>
                     <h3 className="font-semibold mb-2">

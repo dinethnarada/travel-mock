@@ -1,0 +1,6 @@
+This directory will contain the following images:
+- beaches.jpg
+- food.jpg
+- tea.jpg
+
+Please add appropriate high-quality images for each destination and tour category.
