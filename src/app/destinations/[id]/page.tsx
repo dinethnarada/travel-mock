@@ -1,4 +1,6 @@
-import Image from "next/image";
+'use client';
+
+import { use } from "react";
 import Link from "next/link";
 
 // This would typically come from an API or database
@@ -61,7 +63,9 @@ Notable buildings include the 18th-century Dutch Reformed Church. Galle Lighthou
   ]
 };
 
-export default function DestinationDetailPage({ params }: { params: { id: string } }) {
+export default function DestinationDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const { id } = use(params);
   return (
     <div className="py-12">
       <div className="container">

@@ -1,7 +1,6 @@
 'use client';
 
-import Image from "next/image";
-import Link from "next/link";
+import { use } from "react";
 import { useState } from "react";
 
 // This would typically come from an API or database
@@ -62,7 +61,9 @@ This carefully crafted itinerary combines cultural exploration with comfortable 
   ]
 };
 
-export default function TourDetailPage({ params }: { params: { id: string } }) {
+export default function TourDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const { id } = use(params);
   const [selectedDate, setSelectedDate] = useState("");
   const [guests, setGuests] = useState(2);
 

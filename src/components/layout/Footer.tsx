@@ -8,7 +8,7 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Tech Lumina</h3>
             <p className="text-gray-400">
-              Crafting Tomorrow's Websites, Today.
+              Crafting Tomorrow&apos;s Websites, Today.
             </p>
           </div>
           

@@ -1,6 +1,6 @@
 'use client';
 
-import Image from "next/image";
+import { use } from "react";
 import { useState } from "react";
 
 // This would typically come from an API or database
@@ -55,7 +55,9 @@ const offerData = {
   ]
 };
 
-export default function OfferDetailPage({ params }: { params: { id: string } }) {
+export default function OfferDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const { id } = use(params);
   const [selectedTour, setSelectedTour] = useState<number | null>(null);
   const [showCopyMessage, setShowCopyMessage] = useState(false);
 
