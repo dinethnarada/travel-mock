@@ -1,0 +1,9 @@
+This directory will contain the following images:
+- colombo.jpg
+- galle.jpg
+- ella.jpg
+- adventure.jpg
+- cultural.jpg
+- beach.jpg
+
+Please add appropriate high-quality images for each destination and tour category.
