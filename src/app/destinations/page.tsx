@@ -72,7 +72,7 @@ export default function DestinationsPage() {
                 </div>
                 <Link
                   href={`/destinations/${destination.id}`}
-                  className="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+                  className="inline-block px-4 py-2 bg-[#ff6b6b] text-white rounded hover:bg-[#f03e3e]"
                 >
                   Explore More
                 </Link>

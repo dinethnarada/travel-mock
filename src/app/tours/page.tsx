@@ -40,14 +40,14 @@ export default function ToursPage() {
         
         {/* Tour Categories */}
         <div className="flex justify-center gap-4 mb-12">
-          <Link href="/tours/cultural" className="px-6 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700">
+          <Link href="/tours/cultural" className="px-6 py-2 rounded-full bg-[#ff6b6b] text-white hover:bg-[#f03e3e]">
             Cultural Tours
           </Link>
-          <Link href="/tours/adventure" className="px-6 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700">
+          <Link href="/tours/adventure" className="px-6 py-2 rounded-full bg-[#ff6b6b] text-white hover:bg-[#f03e3e]">
             Adventure Tours
           </Link>
-          <Link href="/tours/beach" className="px-6 py-2 rounded-full bg-blue-600 text-white hover:bg-blue-700">
-            Beach Tours
+          <Link href="/tours/beach" className="px-6 py-2 rounded-full bg-[#ff6b6b] text-white hover:bg-[#f03e3e]">
+            Beach Holidays
           </Link>
         </div>
 
@@ -66,14 +66,14 @@ export default function ToursPage() {
               <div className="p-6">
                 <div className="flex justify-between items-start mb-4">
                   <h3 className="text-xl font-semibold">{tour.name}</h3>
-                  <span className="text-blue-600 font-semibold">{tour.price}</span>
+                  <span className="text-[#ff6b6b] font-semibold">{tour.price}</span>
                 </div>
                 <p className="text-gray-600 mb-4">{tour.description}</p>
                 <div className="flex justify-between items-center">
                   <span className="text-sm text-gray-500">{tour.duration}</span>
                   <Link
                     href={`/tours/${tour.id}`}
-                    className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+                    className="px-4 py-2 bg-[#ff6b6b] text-white rounded hover:bg-[#f03e3e]"
                   >
                     View Details
                   </Link>
