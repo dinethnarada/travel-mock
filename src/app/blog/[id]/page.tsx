@@ -57,7 +57,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ id: string 
         {/* Hero Section */}
         <div className="max-w-4xl mx-auto mb-12">
           <div className="mb-6">
-            <span className="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">
+            <span className="bg-[#fff5f5] text-[#ff6b6b] text-sm px-3 py-1 rounded-full">
               {blogPostData.category}
             </span>
           </div>
@@ -90,7 +90,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ id: string 
                   <Link
                     key={tag}
                     href={`/blog/tags/${tag}`}
-                    className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full hover:bg-blue-600 hover:text-white transition-colors"
+                    className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full hover:bg-[#ff6b6b] hover:text-white transition-colors"
                   >
                     #{tag}
                   </Link>
@@ -129,7 +129,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ id: string 
                           Related Post Image
                         </div>
                       </div>
-                      <h3 className="font-semibold mb-2 group-hover:text-blue-600">
+                      <h3 className="font-semibold mb-2 group-hover:text-[#ff6b6b]">
                         {post.title}
                       </h3>
                       <p className="text-gray-600 text-sm mb-2">{post.excerpt}</p>
@@ -143,7 +143,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ id: string 
             </div>
 
             {/* Newsletter Signup */}
-            <div className="bg-blue-50 rounded-lg p-6 mt-6">
+            <div className="bg-[#fff5f5] rounded-lg p-6 mt-6">
               <h2 className="text-xl font-bold mb-4">Subscribe to Our Blog</h2>
               <p className="text-gray-600 mb-4">
                 Get the latest travel tips and stories delivered to your inbox.
@@ -153,7 +153,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ id: string 
                 placeholder="Enter your email"
                 className="w-full px-4 py-2 mb-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
-              <button className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">
+              <button className="w-full bg-[#ff6b6b] text-white py-2 rounded hover:bg-[#f03e3e]">
                 Subscribe
               </button>
             </div>

@@ -42,7 +42,7 @@ export default function AboutPage() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
-              <div className="text-3xl font-bold text-blue-600 mb-2">{stat.value}</div>
+              <div className="text-3xl font-bold text-[#ff6b6b] mb-2">{stat.value}</div>
               <div className="text-gray-600">{stat.label}</div>
             </div>
           ))}
@@ -64,7 +64,7 @@ export default function AboutPage() {
             </p>
             <Link
               href="/contact"
-              className="inline-block px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700"
+              className="inline-block px-6 py-3 bg-[#ff6b6b] text-white rounded hover:bg-[#f03e3e]"
             >
               Get in Touch
             </Link>

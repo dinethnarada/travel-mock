@@ -57,7 +57,7 @@ export default function Home() {
           <p className="text-xl mb-8">Your journey begins with us</p>
           <Link
             href="/tours"
-            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full transition-colors"
+            className="bg-[#ff6b6b] hover:bg-[#f03e3e] text-white px-8 py-3 rounded-full transition-colors"
           >
             Explore Tours
           </Link>
