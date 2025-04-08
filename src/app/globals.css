@@ -5,14 +5,21 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 255, 255, 255;
-  --background-end-rgb: 255, 255, 255;
+  --primary: #ff6b6b;
+  --primary-dark: #f03e3e;
+  --secondary: #ffd43b;
+  --secondary-dark: #fab005;
+  --accent: #4dabf7;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-warm: #fff9db;
+  --text-primary: #343a40;
+  --text-secondary: #868e96;
 }
 
 @layer base {
   body {
-    @apply text-gray-900 bg-white;
+    @apply bg-[#f8f9fa] text-[#343a40] antialiased;
   }
 }
 
@@ -20,17 +27,58 @@
   .container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
-}
+  
+  .btn-primary {
+    @apply bg-[#ff6b6b] hover:bg-[#f03e3e] text-white font-semibold py-3 px-6 rounded-lg transition-all transform hover:scale-105 hover:shadow-lg;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-start-rgb: 10, 10, 10;
-    --background-end-rgb: 10, 10, 10;
+  .btn-secondary {
+    @apply bg-[#ffd43b] hover:bg-[#fab005] text-[#343a40] font-semibold py-3 px-6 rounded-lg transition-all transform hover:scale-105 hover:shadow-lg;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 p-6 border border-gray-100;
+  }
+
+  .section-title {
+    @apply text-4xl font-bold text-[#343a40] mb-8;
+  }
+
+  .section {
+    @apply py-16 bg-gradient-to-b from-white to-[#f8f9fa];
+  }
+
+  .section-alt {
+    @apply py-16 bg-gradient-to-b from-[#fff9db] to-white;
+  }
+
+  .nav-link {
+    @apply text-[#495057] hover:text-[#ff6b6b] font-medium transition-all hover:scale-105;
+  }
+
+  .footer-link {
+    @apply text-gray-300 hover:text-white transition-all hover:translate-x-1;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#ff6b6b] focus:ring-2 focus:ring-[#ff6b6b] transition-all;
+  }
+
+  .hero-section {
+    @apply relative overflow-hidden bg-gradient-to-r from-[#ff6b6b] to-[#f03e3e] text-white py-24;
+  }
+
+  .feature-card {
+    @apply bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100;
+  }
+
+  .testimonial-card {
+    @apply bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all;
   }
 }
 
 body {
-  background: linear-gradient(to bottom, rgb(var(--background-start-rgb)), rgb(var(--background-end-rgb)));
-  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom, #fff5e6, #fff5e6);
+  color: #2c3e50;
   font-family: Arial, Helvetica, sans-serif;
 }
