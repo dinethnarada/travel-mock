@@ -8,10 +8,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div>
             <h3 className="text-2xl font-bold mb-6 text-[#ff6b6b] hover:text-[#f03e3e] transition-colors">
-              TravelMock
+              Tech Lumina
             </h3>
             <p className="text-gray-400 leading-relaxed">
-              Crafting Tomorrow&apos;s Adventures, Today. Experience the world with confidence and style.
+              Crafting Tomorrow&apos;s Adventures, Today.
             </p>
             <div className="mt-6 flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-[#ff6b6b] transition-all transform hover:scale-110">
