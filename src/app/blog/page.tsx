@@ -7,7 +7,6 @@ const blogPosts = [
     title: "Top 10 Hidden Beaches in Sri Lanka",
     excerpt: "Discover the most secluded and pristine beaches that Sri Lanka has to offer...",
     image: "/images/blog/beaches.jpg",
-    author: "Sarah Johnson",
     date: "2025-04-01",
     category: "Destinations",
     readTime: "5 min read"
@@ -17,7 +16,6 @@ const blogPosts = [
     title: "A Food Lover's Guide to Local Cuisine",
     excerpt: "Explore the rich flavors and spices of traditional Sri Lankan dishes...",
     image: "/images/blog/food.jpg",
-    author: "Mike Wilson",
     date: "2025-03-28",
     category: "Food & Culture",
     readTime: "8 min read"
@@ -27,7 +25,6 @@ const blogPosts = [
     title: "Best Time to Visit Tea Plantations",
     excerpt: "Learn when to plan your visit to the beautiful tea estates in the hill country...",
     image: "/images/blog/tea.jpg",
-    author: "John Smith",
     date: "2025-03-25",
     category: "Travel Tips",
     readTime: "6 min read"
@@ -121,10 +118,7 @@ export default function BlogPage() {
                 </h3>
                 <p className="text-gray-600 mb-4">{post.excerpt}</p>
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 rounded-full bg-gray-200" />
-                    <span className="text-sm text-gray-600">{post.author}</span>
-                  </div>
+                
                   <span className="text-sm text-gray-500">
                     {new Date(post.date).toLocaleDateString('en-US', {
                       month: 'short',
