@@ -46,16 +46,16 @@ export default function ContactPage() {
               <div className="space-y-4 text-gray-600">
                 <p>
                   <strong className="block">Address:</strong>
-                  123 Travel Street, Colombo 01,
+                  Colombo,
                   Sri Lanka
                 </p>
                 <p>
                   <strong className="block">Phone:</strong>
-                  +94 11 234 5678
+                  +94 (078) 869-5286
                 </p>
                 <p>
                   <strong className="block">Email:</strong>
-                  info@travelmock.com
+                  contact@tech-lumina.com
                 </p>
                 <p>
                   <strong className="block">Working Hours:</strong>

@@ -6,9 +6,9 @@ export default function Footer() {
       <div className="container py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">TravelMock</h3>
+            <h3 className="text-xl font-bold mb-4">Tech Lumina</h3>
             <p className="text-gray-400">
-              Your trusted partner for unforgettable travel experiences.
+              Crafting Tomorrow's Websites, Today.
             </p>
           </div>
           
@@ -36,9 +36,9 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-400">
-              <li>Email: info@travelmock.com</li>
-              <li>Phone: +1 234 567 890</li>
-              <li>Address: 123 Travel Street</li>
+              <li>Email: contact@tech-lumina.com</li>
+              <li>Phone: +94 (078) 869-5286</li>
+              <li>Address: Colombo, SriLanka</li>
             </ul>
           </div>
 
