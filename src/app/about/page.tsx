@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from 'next/image';
 
 export default function AboutPage() {
   const stats = [
@@ -42,7 +43,7 @@ export default function AboutPage() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
-              <div className="text-3xl font-bold text-blue-600 mb-2">{stat.value}</div>
+              <div className="text-3xl font-bold text-[#ff6b6b] mb-2">{stat.value}</div>
               <div className="text-gray-600">{stat.label}</div>
             </div>
           ))}
@@ -64,18 +65,19 @@ export default function AboutPage() {
             </p>
             <Link
               href="/contact"
-              className="inline-block px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700"
+              className="inline-block px-6 py-3 bg-[#ff6b6b] text-white rounded hover:bg-[#f03e3e]"
             >
               Get in Touch
             </Link>
           </div>
           <div className="relative h-[400px]">
-            <div className="absolute inset-0 bg-gray-200 rounded-lg">
-              {/* Add your about page image here */}
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                About Image Placeholder
-              </div>
-            </div>
+            <Image
+              src="/images/about-us.jpg"
+              alt="About Us"
+              fill
+              className="object-cover rounded-lg"
+              priority
+            />
           </div>
         </div>
 
@@ -86,9 +88,12 @@ export default function AboutPage() {
             {team.map((member, index) => (
               <div key={index} className="text-center">
                 <div className="relative w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden">
-                  <div className="absolute inset-0 bg-gray-200 flex items-center justify-center text-gray-500">
-                    Team Member Photo
-                  </div>
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
                 <p className="text-gray-600">{member.role}</p>

@@ -42,6 +42,13 @@ export default function Home() {
     <>
       {/* Hero Section */}
       <section className="relative h-[80vh] flex items-center justify-center">
+        <Image
+          src="/images/discover_paradise.jpg"
+          alt="Discover Paradise"
+          fill
+          className="object-cover"
+          priority
+        />
         <div className="absolute inset-0 bg-black/50 z-10" />
         <div className="relative z-20 text-center text-white">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
@@ -50,7 +57,7 @@ export default function Home() {
           <p className="text-xl mb-8">Your journey begins with us</p>
           <Link
             href="/tours"
-            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full transition-colors"
+            className="bg-[#ff6b6b] hover:bg-[#f03e3e] text-white px-8 py-3 rounded-full transition-colors"
           >
             Explore Tours
           </Link>
@@ -121,7 +128,7 @@ export default function Home() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-blue-600 text-white">
+      <section className="py-16 bg-[#ff6b6b] text-white">
         <div className="container text-center">
           <h2 className="text-3xl font-bold mb-4">
             Ready to Start Your Journey?
@@ -131,7 +138,7 @@ export default function Home() {
           </p>
           <Link
             href="/contact"
-            className="inline-block bg-white text-blue-600 px-8 py-3 rounded-full hover:bg-gray-100 transition-colors"
+            className="inline-block bg-white text-[#ff6b6b] px-8 py-3 rounded-full font-semibold hover:bg-gray-50 transition-colors"
           >
             Get in Touch
           </Link>

@@ -140,7 +140,7 @@ export default function BlogPage() {
 
         {/* Load More Button */}
         <div className="text-center mt-12">
-          <button className="px-8 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700">
+          <button className="px-8 py-3 bg-[#ff6b6b] text-white rounded-full hover:bg-[#f03e3e]">
             Load More Posts
           </button>
         </div>
